@@ -21,18 +21,18 @@ terminal-phone puts an iOS simulator, or your own paired iPhone, inline in your 
 Requirements: an Apple silicon Mac with macOS 15 or later, and Xcode 26 or later installed from Apple and opened once.
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/govijr/terminal-phone/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Sivas-Subramaniyan/terminal-phone/main/install.sh | bash
 ```
 
-Then open a new terminal and run `terminal-phone`. The [install script](install.sh) downloads the latest release, checks its SHA-256 checksum and runs `terminal-phone self install`, which installs to `~/.local` and adds it to your PATH. Pin a version with `TERMINAL_PHONE_VERSION=0.4.0`, or pass install options with `bash -s -- --prefix /absolute/path --no-path`.
+Then open a new terminal and run `terminal-phone`. The [install script](install.sh) downloads the latest release, checks its SHA-256 checksum and runs `terminal-phone self install`, which installs to `~/.local` and adds it to your PATH. Pin a version with `TERMINAL_PHONE_VERSION=0.4.1`, or pass install options with `bash -s -- --prefix /absolute/path --no-path`.
 
-**Manual download:** from [Releases](https://github.com/govijr/terminal-phone/releases), with `curl` so macOS doesn't quarantine it:
+**Manual download:** from [Releases](https://github.com/Sivas-Subramaniyan/terminal-phone/releases), with `curl` so macOS doesn't quarantine it:
 
 ```sh
-base=https://github.com/govijr/terminal-phone/releases/download/v0.4.0
-curl -fsSLO "$base/terminal-phone-0.4.0-macos-arm64.tar.gz" -O "$base/terminal-phone-0.4.0-macos-arm64.tar.gz.sha256"
-shasum -a 256 -c terminal-phone-0.4.0-macos-arm64.tar.gz.sha256
-tar -xzf terminal-phone-0.4.0-macos-arm64.tar.gz
+base=https://github.com/Sivas-Subramaniyan/terminal-phone/releases/download/v0.4.1
+curl -fsSLO "$base/terminal-phone-0.4.1-macos-arm64.tar.gz" -O "$base/terminal-phone-0.4.1-macos-arm64.tar.gz.sha256"
+shasum -a 256 -c terminal-phone-0.4.1-macos-arm64.tar.gz.sha256
+tar -xzf terminal-phone-0.4.1-macos-arm64.tar.gz
 ./terminal-phone/terminal-phone self install
 ```
 

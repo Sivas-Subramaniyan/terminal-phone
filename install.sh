@@ -1,13 +1,13 @@
 #!/bin/bash
 # Installs the latest terminal-phone release:
-#   curl -fsSL https://raw.githubusercontent.com/govijr/terminal-phone/main/install.sh | bash
-# Pin a version with TERMINAL_PHONE_VERSION=0.4.0. Options after `bash -s --` go to `terminal-phone self install`
+#   curl -fsSL https://raw.githubusercontent.com/Sivas-Subramaniyan/terminal-phone/main/install.sh | bash
+# Pin a version with TERMINAL_PHONE_VERSION=0.4.1. Options after `bash -s --` go to `terminal-phone self install`
 # (for example --prefix PATH or --no-path).
 set -euo pipefail
 
 # Everything runs inside main so a partial download can't execute half a script.
 main() {
-  local repo=govijr/terminal-phone
+  local repo=Sivas-Subramaniyan/terminal-phone
   if [[ "$(uname -s)" != Darwin || "$(uname -m)" != arm64 ]]; then
     echo "terminal-phone needs an Apple silicon Mac." >&2; exit 1
   fi
